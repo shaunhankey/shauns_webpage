@@ -128,7 +128,8 @@ ul {
 
 @media (max-width: 768px) {
     .profile-image img,
-    .contact-image img {
+    .contact-image img,
+    .profile-photo {
         max-height: 60vh; /* Smaller viewport height percentage for smaller devices */
         transform: scale(0.7); /* Further scale down on smaller screens */
         margin: 5px auto; /* Smaller margin for smaller devices */
@@ -137,7 +138,8 @@ ul {
 
 @media (orientation: landscape) {
     .profile-image img,
-    .contact-image img {
+    .contact-image img,
+    .profile-photo {
         max-height: 50vh; /* Even smaller when in landscape to ensure it fits without scrolling */
         transform: scale(0.6); /* Further scale down in landscape orientation */
     }
