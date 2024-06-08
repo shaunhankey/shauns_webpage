@@ -1,0 +1,144 @@
+body {
+    padding-top: 50px;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.rights {
+    color: lightslategray;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.indexBody {
+    background-image: url('../media/pexels-billelmoula-540518.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-image img,
+.contact-image img {
+    max-height: 65vh; /* Controls the maximum height */
+    width: auto;      /* Maintains the aspect ratio */
+    transform: scale(0.8); /* Scales the image to 80% of its original size */
+    display: block;   /* Ensures no extra spacing around the image */
+    margin: 20px auto; /* Adds top and bottom margin, centers image horizontally */
+}
+
+.container-contact {
+    background: #f8f9fa; /* Light grey background for the contact info for better visibility */
+    padding: 20px;
+    border-radius: 5px; /* Slight rounding of corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.contact-section img {
+    border-radius: 5px; /* Consistent rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-wrap {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+
+}
+
+.business {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+p {
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
+.cv-section h1, .cv-section h2{
+    margin-top: 20px;
+}
+
+.cv-section h3 {
+    margin-top: 15px;
+}
+
+.cv-section p, .cv-section ul {
+    margin-bottom: 15px;
+}
+
+.profile-h1 {margin-top: 20px; margin-bottom: 15px}
+
+.contact-h2 {margin-top: 20px; margin-bottom: 15px}
+
+ul {
+    padding-left: 20px;
+}
+
+.contact-details, .summary, .experience, .education {
+    margin-bottom: 30px;
+}
+
+.contact-details a {
+    color: #007bff;
+}
+
+.mb-0 {color: white}
+
+.profile-image img,
+.contact-image img,
+.profile-photo {
+    max-height: 65vh; /* Controls the maximum height */
+    width: auto;      /* Maintains the aspect ratio */
+    transform: scale(0.8); /* Scales the image to 80% of its original size */
+    display: block;   /* Ensures no extra spacing around the image */
+    margin: 10px auto; /* Adds top and bottom margin, centers image horizontally */
+}
+
+.contact-details p {
+    margin-bottom: 10px; /* Adds space between contact detail paragraphs */
+}
+
+.contact-details h2 {
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.blockquote-footer {color: white;}
+
+@media (max-width: 768px) {
+    .profile-image img,
+    .contact-image img {
+        max-height: 60vh; /* Smaller viewport height percentage for smaller devices */
+        transform: scale(0.7); /* Further scale down on smaller screens */
+        margin: 5px auto; /* Smaller margin for smaller devices */
+    }
+}
+
+@media (orientation: landscape) {
+    .profile-image img,
+    .contact-image img {
+        max-height: 50vh; /* Even smaller when in landscape to ensure it fits without scrolling */
+        transform: scale(0.6); /* Further scale down in landscape orientation */
+    }
+}
