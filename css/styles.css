@@ -145,4 +145,10 @@ ul {
         transform: scale(0.6); /* Further scale down in landscape orientation */
     }
 }
-/*comment*/
+.img-fixed {
+    height: auto; /* Set the desired fixed height */
+    width: 500px;   /* Maintain aspect ratio */
+    display: block;    /* Ensure no extra spacing around the image */
+    margin: 0 auto;    /* Center the image */
+}
+
