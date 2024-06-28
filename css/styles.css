@@ -222,5 +222,73 @@ p {
     margin-bottom: 20px; /* Adds space between paragraphs */
 }
 
+.nexus-medica {
+    font-size: 3.5em; /* Increase the font size */
+    font-weight: bold;
+    color: #004080; /* A dark blue color for a professional look */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Add some spacing between the letters */
+    margin-top: 20px;
+    text-shadow: 2px 2px #e0e0e0; /* Add a subtle shadow for depth */
+}
+
+.welcome, .business {
+    font-size: 2em;
+    font-weight: 500; /* Slightly bold */
+    color: #0066cc; /* A lighter blue color for contrast */
+    margin-top: 10px;
+    text-shadow: 1px 1px #e0e0e0; /* Add a subtle shadow for depth */
+}
+
+.business {
+    font-size: 1.75em; /* Slightly smaller than the welcome message */
+    font-weight: 400; /* Regular weight */
+    color: #0073e6; /* Different shade of blue for variation */
+    margin-top: 5px;
+}
+
+.quote-section {
+    margin-top: 20px;
+}
+
+blockquote {
+    font-size: 1.25em;
+    color: #333;
+    text-shadow: 1px 1px #e0e0e0;
+}
+.nexus-medica, .welcome, .business {
+    font-size: 3.5em; /* Same size for consistency */
+    font-weight: bold;
+    color: #000; /* Black color */
+    letter-spacing: 2px; /* Add some spacing between the letters */
+    margin-top: 20px;
+    text-shadow: 2px 2px #e0e0e0; /* Add a subtle shadow for depth */
+}
+
+.welcome, .business {
+    font-size: 2em; /* Slightly smaller than the main heading */
+    font-weight: 500; /* Slightly bold */
+    margin-top: 10px;
+    text-shadow: 1px 1px #e0e0e0; /* Add a subtle shadow for depth */
+}
+
+.business {
+    font-size: 1.75em; /* Slightly smaller than the welcome message */
+    font-weight: 400; /* Regular weight */
+    margin-top: 5px;
+}
+
+.quote-section {
+    margin-top: 20px;
+}
+
+blockquote {
+    font-size: 1.25em;
+    color: #333;
+    text-shadow: 1px 1px #e0e0e0;
+}
+
+
+
 
 
