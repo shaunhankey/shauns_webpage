@@ -145,4 +145,13 @@ ul {
         transform: scale(0.6); /* Further scale down in landscape orientation */
     }
 }
+
+/* Add this to your styles.css */
+.clock {
+    font-size: 2em;
+    margin-top: 20px;
+    color: white; /* Adjust color based on your background */
+}
+
 /*comment*/
+

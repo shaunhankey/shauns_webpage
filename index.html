@@ -18,6 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
@@ -32,6 +33,8 @@
                 <footer class="blockquote-footer">Sir Edmund Hillary</footer>
             </blockquote>
         </div>
+        <div id="clock" class="clock"></div> <!-- Add this line for the clock -->
+        <p>GMT</p>
     </main>
 </div>
 <footer class="text-center py-4">
@@ -41,5 +44,37 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        h = checkTime(h);
+        m = checkTime(m);
+        s = checkTime(s);
+        var ampm = h >= 12 ? " pm" : " am";
+        if (h > 12) {
+            h -= 12;
+        } else if (h === 0) {
+            h = 12;
+        }
+        document.getElementById('clock').innerHTML = h + ":" + m + ":" + s + ampm;
+        var t = setTimeout(startTime, 500);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    window.onload = function() {
+        startTime();
+    };
+</script>
+
 </body>
 </html>
