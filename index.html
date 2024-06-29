@@ -57,13 +57,7 @@
         h = checkTime(h);
         m = checkTime(m);
         s = checkTime(s);
-        var ampm = h >= 12 ? " pm" : " am";
-        if (h > 12) {
-            h -= 12;
-        } else if (h === 0) {
-            h = 12;
-        }
-        document.getElementById('clock').innerHTML = h + ":" + m + ":" + s + ampm;
+        document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
         var t = setTimeout(startTime, 500);
     }
 
@@ -78,6 +72,7 @@
         startTime();
     };
 </script>
+
 
 </body>
 </html>
