@@ -26,6 +26,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    scale: 95%;
 }
 
 .profile-image img,
@@ -104,7 +105,7 @@ ul {
     color: #007bff;
 }
 
-.mb-0 {color: white; font-size: medium;
+.mb-0 {color: white; font-size: x-large;
 }
 
 .profile-image img,
@@ -214,8 +215,8 @@ ul {
 .clock {
     margin-top: 20px;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
+    font-weight: normal;
+    color: white;
 }
 
 p {
@@ -254,7 +255,7 @@ p {
 blockquote {
     font-size: 1.25em;
     color: #333;
-    text-shadow: 1px 1px #e0e0e0;
+    /*text-shadow: 1px 1px #e0e0e0;*/
 }
 .nexus-medica, .welcome, .business {
     font-size: 3.5em; /* Same size for consistency */
@@ -283,9 +284,9 @@ blockquote {
 }
 
 blockquote {
-    font-size: 1.25em;
+    font-size: 20px;
     color: #333;
-    text-shadow: 1px 1px #e0e0e0;
+    /*text-shadow: 1px 1px #e0e0e0;*/
 }
 
 
