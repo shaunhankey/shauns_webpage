@@ -135,7 +135,7 @@ mb-0 {
 @media (max-width: 768px) {
     .profile-image img,
     .contact-image img {
-        max-height: 60vh; /* Smaller viewport height percentage for smaller devices */
+        max-height: 80vh; /* Smaller viewport height percentage for smaller devices */
         margin: 5px auto; /* Smaller margin for smaller devices */
     }
 }
