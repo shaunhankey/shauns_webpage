@@ -108,8 +108,8 @@ p {
     margin-bottom: 20px; /* Adds space between paragraphs */
 }
 
-blockquote {
-    font-size: xx-large;
+mb-0 {
+    font-size: xxx-large;
     color: white;
 }
 
