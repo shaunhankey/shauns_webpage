@@ -1,45 +1,61 @@
-body {
-    padding-top: 50px;
-}
-
-.starter-template {
-    padding: 40px 15px;
-    text-align: center;
-}
-
-.rights {
-    color: lightslategray;
-}
-
 html, body {
     height: 100%;
     margin: 0;
 }
 
 body {
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
 }
 
 .indexBody {
     background-image: url('../media/pexels-billelmoula-540518.jpg');
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
-    scale: 95%;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img-fixed {
+    width: 100%;
+    max-width: 500px; /* Adjust this to your preference */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Additional styling for profile and contact images */
 .profile-image img,
 .contact-image img {
     max-height: 60vh; /* Controls the maximum height */
     width: auto;      /* Maintains the aspect ratio */
-    transform: scale(0.7); /* Scales the image to 80% of its original size */
     display: block;   /* Ensures no extra spacing around the image */
     margin: 20px auto; /* Adds top and bottom margin, centers image horizontally */
 }
 
 .container-contact {
-    background: #f8f9fa; /* Light grey background for the contact info for better visibility */
+    background: #f8f9fa; /* Light grey background for the contact info */
     padding: 20px;
     border-radius: 5px; /* Slight rounding of corners */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
@@ -56,46 +72,49 @@ body {
 
 footer {
     flex-shrink: 0;
+    color: #e0e0e0;
+}
+
+.welcome, .business, .nexus-medica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px; /* Reduced padding */
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px #e0e0e0; /* Add a subtle shadow for depth */
 }
 
 .welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-
+    font-size: 2em;
 }
 
 .business {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+.nexus-medica {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #004080; /* Dark blue color for a professional look */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Add some spacing between the letters */
+    margin-top: 20px;
+    text-shadow: 2px 2px #e0e0e0; /* Add a subtle shadow for depth */
 }
 
 p {
     margin-bottom: 20px; /* Adds space between paragraphs */
 }
 
-.cv-section h1, .cv-section h2{
-    margin-top: 20px;
+blockquote {
+    font-size: xx-large;
+    color: white;
 }
 
-.cv-section h3 {
-    margin-top: 15px;
-}
-
-.cv-section p, .cv-section ul {
-    margin-bottom: 15px;
-}
-
-.profile-h1 {margin-top: 20px; margin-bottom: 15px}
-
-.contact-h2 {margin-top: 20px; margin-bottom: 15px}
-
-ul {
-    padding-left: 20px;
-}
+.blockquote-footer {color: #e0e0e0;
+                    font-size: large}
 
 .contact-details, .summary, .experience, .education {
     margin-bottom: 30px;
@@ -103,19 +122,6 @@ ul {
 
 .contact-details a {
     color: #007bff;
-}
-
-.mb-0 {color: white; font-size: x-large;
-}
-
-.profile-image img,
-.contact-image img,
-.profile-photo {
-    max-height: 65vh; /* Controls the maximum height */
-    width: auto;      /* Maintains the aspect ratio */
-    transform: scale(0.8); /* Scales the image to 80% of its original size */
-    display: block;   /* Ensures no extra spacing around the image */
-    margin: 10px auto; /* Adds top and bottom margin, centers image horizontally */
 }
 
 .contact-details p {
@@ -126,170 +132,21 @@ ul {
     margin-bottom: 20px; /* Adds space below the heading */
 }
 
-.blockquote-footer {color: white; font-size: medium}
-
 @media (max-width: 768px) {
     .profile-image img,
-    .contact-image img,
-    .profile-photo {
+    .contact-image img {
         max-height: 60vh; /* Smaller viewport height percentage for smaller devices */
-        transform: scale(0.7); /* Further scale down on smaller screens */
         margin: 5px auto; /* Smaller margin for smaller devices */
     }
 }
 
 @media (orientation: landscape) {
     .profile-image img,
-    .contact-image img,
-    .profile-photo {
-        max-height: 50vh; /* Even smaller when in landscape to ensure it fits without scrolling */
-        transform: scale(0.6); /* Further scale down in landscape orientation */
+    .contact-image img {
+        max-height: 50vh; /* Smaller when in landscape to ensure it fits without scrolling */
+        margin: 5px auto; /* Smaller margin for landscape orientation */
     }
-}
-.img-fixed {
-    height: auto; /* Set the desired fixed height */
-    width: 500px;   /* Maintain aspect ratio */
-    display: block;    /* Ensure no extra spacing around the image */
-    margin: 0 auto;    /* Center the image */
-}
-
-.welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px; /* Reduced padding */
-    color: #333;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.business {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px; /* Reduced padding */
-    color: black; /* Nice contrast color */
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nexus-medica {
-    color: black;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 2px #000;
-}
-
-.nexus-medica {
-    color: white; /* Nice contrast color */
-    font-weight: bold;
-    font-size: 3.5rem; /* Large font size */
-    text-shadow: 1px 1px 2px #000;
-    margin-top: 20px;
-}
-
-.welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px; /* Reduced padding */
-    color: #333;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.business {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px; /* Reduced padding */
-    color: black; /* Nice contrast color */
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.quote-section {
-    margin-top: 20px;
 }
 
 .clock {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: white;
-}
-
-p {
-    margin-bottom: 20px; /* Adds space between paragraphs */
-}
-
-.nexus-medica {
-    font-size: 3.5em; /* Increase the font size */
-    font-weight: bold;
-    color: #004080; /* A dark blue color for a professional look */
-    text-transform: uppercase; /* Make the text uppercase */
-    letter-spacing: 2px; /* Add some spacing between the letters */
-    margin-top: 20px;
-    text-shadow: 2px 2px #e0e0e0; /* Add a subtle shadow for depth */
-}
-
-.welcome, .business {
-    font-size: 2em;
-    font-weight: 500; /* Slightly bold */
-    color: #0066cc; /* A lighter blue color for contrast */
-    margin-top: 10px;
-    text-shadow: 1px 1px #e0e0e0; /* Add a subtle shadow for depth */
-}
-
-.business {
-    font-size: 1.75em; /* Slightly smaller than the welcome message */
-    font-weight: 400; /* Regular weight */
-    color: #0073e6; /* Different shade of blue for variation */
-    margin-top: 5px;
-}
-
-.quote-section {
-    margin-top: 20px;
-}
-
-blockquote {
-    font-size: 1.25em;
-    color: #333;
-    /*text-shadow: 1px 1px #e0e0e0;*/
-}
-.nexus-medica, .welcome, .business {
-    font-size: 3.5em; /* Same size for consistency */
-    font-weight: bold;
-    color: #000; /* Black color */
-    letter-spacing: 2px; /* Add some spacing between the letters */
-    margin-top: 20px;
-    text-shadow: 2px 2px #e0e0e0; /* Add a subtle shadow for depth */
-}
-
-.welcome, .business {
-    font-size: 2em; /* Slightly smaller than the main heading */
-    font-weight: 500; /* Slightly bold */
-    margin-top: 10px;
-    text-shadow: 1px 1px #e0e0e0; /* Add a subtle shadow for depth */
-}
-
-.business {
-    font-size: 1.75em; /* Slightly smaller than the welcome message */
-    font-weight: 400; /* Regular weight */
-    margin-top: 5px;
-}
-
-.quote-section {
-    margin-top: 20px;
-}
-
-blockquote {
-    font-size: 20px;
-    color: #333;
-    /*text-shadow: 1px 1px #e0e0e0;*/
-}
-
-
-
-
-
+    color: white;}
