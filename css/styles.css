@@ -11,9 +11,14 @@ body {
 
 .indexBody {
     background-image: url('../media/pexels-dreamypixel-552785.jpg');
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
