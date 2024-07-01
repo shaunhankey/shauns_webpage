@@ -10,7 +10,7 @@ body {
 }
 
 .indexBody {
-    background-image: url('../media/pexels-billelmoula-540518.jpg');
+    background-image: url('../media/pexels-dreamypixel-552785.jpg');
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ mb-0 {
     color: white;
 }
 
-.blockquote-footer {color: #e0e0e0;
+.blockquote-footer {color: black;
                     font-size: large}
 
 .contact-details, .summary, .experience, .education {
@@ -149,4 +149,4 @@ mb-0 {
 }
 
 .clock {
-    color: white;}
+    color: black;}
