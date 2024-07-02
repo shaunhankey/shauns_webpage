@@ -12,7 +12,7 @@ function startTime() {
     minutes = checkTime(minutes);
     seconds = checkTime(seconds);
 
-    document.getElementById('clock').innerHTML = "Remaining this year " + days + " days - " + hours + " hours - " + minutes + " mins and " + seconds + " secs and counting..";
+    document.getElementById('clock').innerHTML = days + " days, " + hours + " hours, " + minutes + " mins and " + seconds + " secs left this year ";
 
     setTimeout(startTime, 1000);
 }

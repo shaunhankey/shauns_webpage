@@ -77,7 +77,7 @@ body {
 
 footer {
     flex-shrink: 0;
-    color: #e0e0e0;
+    color: #BC9785;
 }
 
 .welcome, .business, .nexus-medica {
@@ -118,7 +118,7 @@ mb-0 {
     color: white;
 }
 
-.blockquote-footer {color: black;
+.blockquote-footer, blockquote {color: #BC9785;
                     font-size: large}
 
 .contact-details, .summary, .experience, .education {
@@ -154,8 +154,9 @@ mb-0 {
 }
 
 .clock {
-    color: black;
-    font-size: large;
+    color: #BC9785;
+    font-size: inherit;
     font-weight: bold}
 
 #projects {padding-bottom: 20px}
+
