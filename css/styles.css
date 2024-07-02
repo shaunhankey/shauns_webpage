@@ -138,7 +138,7 @@ mb-0 {
 }
 
 /*@media (max-width: 768px) {*/
-@media (max-width: 844px) {    .profile-image img,
+@media (max-width: 844px) {.profile-image img,
     .contact-image img {
         max-height: 80vh; /* Smaller viewport height percentage for smaller devices */
         margin: 5px auto; /* Smaller margin for smaller devices */
@@ -154,6 +154,8 @@ mb-0 {
 }
 
 .clock {
-    color: black;}
+    color: black;
+    font-size: large;
+    font-weight: bold}
 
 #projects {padding-bottom: 20px}
