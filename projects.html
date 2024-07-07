@@ -3,54 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSNA 2024</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-<!--        <a class="navbar-brand" href="#">Navbar</a>-->
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Shaun Hankey</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-<div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
                 <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
 
-    <main class="container mt-4">
+    <main class="container mt-5">
+        <h1 class="text-center mb-5">My Projects</h1>
 
-        <h1 class="text-center" id="projects">Projects</h1>
-        <div class="content">
-            <ul>
-                <li><h2>House price analysis (including BOE Base Rates and Inflation)</h2>
-                <ul><li><p>I scraped data from Rightmove for Newquay and Wigan and built numerous analytics. Runs once per month.</p></li></ul>
+        <div class="project mb-4">
+            <h2>House Price Analysis</h2>
+            <p>
+                I developed a comprehensive house price analysis tool that includes data on BOE Base Rates and Inflation. I scraped data from Rightmove for Newquay and Wigan and built numerous analytics to provide insights into housing trends. This analysis runs once per month to ensure up-to-date information.
+            </p>
+        </div>
 
-            <li><h2>Football Project</h2>
-            <ul><li><p>Built a EPL football match predictions for English Premier League. </p></ul></li>
-            <li><h2>Various Django projects</h2></li>
-                <ul>
-                <li>Bookstore</li>
-                <li>Project App - With analysis for football prediction.</li>
-                <li>Multiple business ML models including Kmeans clustering and Linear Regression.</li>
-            </ul>
-            </ul>
+        <div class="project mb-4">
+            <h2>Football Prediction Project</h2>
+            <p>
+                I built an EPL football match prediction model for the English Premier League. The model uses historical match data to predict outcomes of upcoming matches, helping fans and analysts make informed decisions.
+            </p>
+        </div>
 
+        <div class="project mb-4">
+            <h2>Business Machine Learning Models</h2>
+            <p>
+                Developed several machine learning models for business applications, including XGBoost, Kmeans clustering, linear regression and logistical regression, to help businesses make data-driven decisions.
+            </p>
+        </div>
 
-
-
+        <div class="project mb-4">
+            <h2>Django Projects</h2>
+            <p>
+                I have developed various web applications using Django:
+                <strong>News App:</strong> A web application that lists highlights of news articles from various sources.
+                <strong>Blog Post App:</strong> A simple blog platform where users can post articles, with features including user authentication, login, and registration.
+                <strong>Bookstore:</strong> An online bookstore application that allows users to browse, search, and purchase books.
+            </p>
         </div>
     </main>
 
     <footer class="text-center py-4">
-        <p class="rights">&copy; 2024 Shaun Hankey - All rights reserved.</p>
+        <p>&copy; 2024 Shaun Hankey - All rights reserved.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

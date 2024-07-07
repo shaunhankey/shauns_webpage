@@ -28,8 +28,6 @@ body {
     align-items: center;
     padding: 20px;
     background-color: white;
-    /*border-radius: 10px;*/
-    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -123,7 +121,7 @@ p {
     margin-bottom: 20px; /* Adds space between paragraphs */
 }
 
-mb-0 {
+.mb-0 {
     font-size: xxx-large;
     color: white;
 }
