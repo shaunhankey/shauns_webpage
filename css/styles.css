@@ -27,55 +27,43 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.col-md-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency */
+    margin: 20px 0;
+    z-index: 1;
 }
 
 .img-fixed {
     width: 100%;
-    max-width: 500px; /* Adjust this to your preference */
+    max-width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Additional styling for profile and contact images */
 .profile-image img,
 .contact-image img {
-    max-height: 60vh; /* Controls the maximum height */
-    width: auto;      /* Maintains the aspect ratio */
-    display: block;   /* Ensures no extra spacing around the image */
-    margin: 20px auto; /* Adds top and bottom margin, centers image horizontally */
+    max-height: 60vh;
+    width: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 .container-contact {
-    background: #f8f9fa; /* Light grey background for the contact info */
+    background: #f8f9fa;
     padding: 20px;
-    border-radius: 5px; /* Slight rounding of corners */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section img {
-    border-radius: 5px; /* Consistent rounded corners */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .content-wrap {
     flex: 1 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 footer {
@@ -84,7 +72,6 @@ footer {
 }
 
 .rights-index {
-    flex-shrink: 0;
     color: #BC9785;
 }
 
@@ -92,33 +79,33 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px; /* Reduced padding */
+    padding-top: 10px;
     color: #333;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 1px 1px #e0e0e0; /* Add a subtle shadow for depth */
+    text-shadow: 1px 1px #e0e0e0;
 }
 
 .welcome {
     font-size: 2em;
+    font-weight: bold;
 }
 
 .business {
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .nexus-medica {
     font-size: 3.5em;
     font-weight: bold;
-    color: #004080; /* Dark blue color for a professional look */
-    text-transform: uppercase; /* Make the text uppercase */
-    letter-spacing: 2px; /* Add some spacing between the letters */
+    color: #004080;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     margin-top: 20px;
-    text-shadow: 2px 2px #e0e0e0; /* Add a subtle shadow for depth */
+    text-shadow: 2px 2px #e0e0e0;
 }
 
 p {
-    margin-bottom: 20px; /* Adds space between paragraphs */
+    margin-bottom: 20px;
 }
 
 .mb-0 {
@@ -140,26 +127,26 @@ p {
 }
 
 .contact-details p {
-    margin-bottom: 10px; /* Adds space between contact detail paragraphs */
+    margin-bottom: 10px;
 }
 
 .contact-details h2 {
-    margin-bottom: 20px; /* Adds space below the heading */
+    margin-bottom: 20px;
 }
 
 @media (max-width: 844px) {
     .profile-image img,
     .contact-image img {
-        max-height: 80vh; /* Smaller viewport height percentage for smaller devices */
-        margin: 5px auto; /* Smaller margin for smaller devices */
+        max-height: 80vh;
+        margin: 5px auto;
     }
 }
 
 @media (orientation: landscape) {
     .profile-image img,
     .contact-image img {
-        max-height: 50vh; /* Smaller when in landscape to ensure it fits without scrolling */
-        margin: 5px auto; /* Smaller margin for landscape orientation */
+        max-height: 50vh;
+        margin: 5px auto;
     }
 }
 
@@ -171,4 +158,27 @@ p {
 
 #projects {
     padding-bottom: 20px;
+}
+
+.quote-section {
+    margin-top: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.quote-section .blockquote {
+    color: #BC9785;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px #e0e0e0;
+    quotes: none; /* Remove the dash before the quotes */
+}
+
+.quote-section .blockquote:before, .quote-section .blockquote:after {
+    quotes: none; /* Remove blockquote default styling */
+}
+
+.quote-section .blockquote-footer {
+    color: #BC9785;
+    font-size: 1em;
 }
