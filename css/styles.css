@@ -10,8 +10,8 @@ body {
 }
 
 .indexBody {
-    background-image: url('../media/pexels-dreamypixel-552785.jpg');
-    background-size: cover;
+    background-image: url('../media/new1.png');
+    background-size: contain; /* Ensure the image fits within the container */
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 
 .container {
     display: flex;
@@ -161,12 +162,12 @@ p {
     padding-bottom: 20px;
 }
 
-.quote-section {
-    margin-top: 20px;
-    z-index: 2;
-    position: relative;
-    padding: 10px; /* Add padding for better readability */
-}
+/*.quote-section {*/
+/*    margin-top: 20px;*/
+/*    z-index: 2;*/
+/*    position: relative;*/
+/*    padding: 10px; !* Add padding for better readability *!*/
+/*}*/
 
 .quote-section .blockquote {
     color: #BC9785;
@@ -181,7 +182,7 @@ p {
 }
 
 .quote-section .blockquote-footer {
-    color: #BC9785;
+    color: black;
     font-size: 1em;
 }
 
