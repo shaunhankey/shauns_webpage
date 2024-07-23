@@ -116,6 +116,7 @@ p {
 .blockquote-footer, blockquote {
     color: #BC9785;
     font-size: large;
+    background: none; /* Remove the background */
 }
 
 .contact-details, .summary, .experience, .education {
@@ -151,7 +152,7 @@ p {
 }
 
 .clock {
-    color: #BC9785;
+    color: black;
     font-size: inherit;
     font-weight: bold;
 }
@@ -162,8 +163,9 @@ p {
 
 .quote-section {
     margin-top: 20px;
-    z-index: 3;
+    z-index: 2;
     position: relative;
+    padding: 10px; /* Add padding for better readability */
 }
 
 .quote-section .blockquote {
