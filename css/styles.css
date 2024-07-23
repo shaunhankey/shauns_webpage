@@ -89,6 +89,21 @@ footer {
     font-weight: bold;
 }
 
+.business {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nexus-medica {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #004080;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-shadow: 2px 2px #e0e0e0;
+}
+
 p {
     margin-bottom: 20px;
 }
@@ -178,4 +193,16 @@ p {
 
 .education {
     margin-top: 30px;
+}
+
+.heading-image img {
+    height: auto; /* Adjust this value to match the heading size */
+    width: 100%;
+    margin-right: 10px; /* Adjust space between image and text */
+}
+
+.heading-image h2, .heading-image h3 {
+    margin-top: 20px; /* Add margin at the top of these headings */
+    margin-bottom: 20px; /* Add margin at the bottom of these headings */
+    text-align: center; /* Center the text */
 }
