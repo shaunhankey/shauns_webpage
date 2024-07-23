@@ -89,21 +89,6 @@ footer {
     font-weight: bold;
 }
 
-.business {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.nexus-medica {
-    font-size: 3.5em;
-    font-weight: bold;
-    color: #004080;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    text-shadow: 2px 2px #e0e0e0;
-}
-
 p {
     margin-bottom: 20px;
 }
@@ -181,4 +166,16 @@ p {
 .quote-section .blockquote-footer {
     color: #BC9785;
     font-size: 1em;
+}
+
+.cv-section h1, .cv-section h2 {
+    margin-bottom: 20px; /* Add margin at the bottom of these headings */
+}
+
+.cv-section h3 {
+    margin-top: 30px; /* Add margin at the top of these subheadings */
+}
+
+.education {
+    margin-top: 30px;
 }
