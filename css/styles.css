@@ -73,7 +73,7 @@ footer {
 }
 
 .rights-index {
-    color: #BC9785;
+    color: black;
 }
 
 .welcome, .business, .nexus-medica {
@@ -115,7 +115,7 @@ p {
 }
 
 .blockquote-footer, blockquote {
-    color: #BC9785;
+    color: black;
     font-size: large;
     background: none; /* Remove the background */
 }
