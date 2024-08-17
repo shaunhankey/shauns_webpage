@@ -43,7 +43,7 @@ body {
 
 .profile-image img,
 .contact-image img {
-    max-height: 60vh;
+    max-height: 40vh;
     width: auto;
     display: block;
     margin: 20px auto;
@@ -76,7 +76,7 @@ footer {
     color: black;
 }
 
-.welcome, .business, .nexus-medica {
+.welcome, .business {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,16 +95,6 @@ footer {
     font-weight: bold;
 }
 
-.nexus-medica {
-    font-size: 3.5em;
-    font-weight: bold;
-    color: #004080;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    text-shadow: 2px 2px #e0e0e0;
-}
-
 p {
     margin-bottom: 20px;
 }
@@ -121,7 +111,7 @@ p {
 }
 
 .contact-details, .summary, .experience, .education {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .contact-details a {
@@ -145,10 +135,12 @@ p {
 }
 
 @media (orientation: landscape) {
-    .profile-image img,
+    .profile-photo img,
     .contact-image img {
         max-height: 50vh;
-        margin: 5px auto;
+        margin: 10px auto;
+        border-radius: 25px;
+        border: 20px;
     }
 }
 
