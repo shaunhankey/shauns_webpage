@@ -1,22 +1,16 @@
-/* Ensure the html and body take up the full height */
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
 }
 
-/* Use Flexbox for the body to manage the layout */
 body {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    padding-top: 50px; /* Adjust if your header height is different */
 }
 
-/* Style for indexBody class */
 .indexBody {
-    background-image: url('../media/joshua-sukoff-k3TCmDjLN6s-unsplash.jpg');
+    background-image: url('../media/new1.png');
     background-size: contain; /* Ensure the image fits within the container */
     background-position: center;
     background-repeat: no-repeat;
@@ -27,18 +21,6 @@ body {
     align-items: center;
 }
 
-/* Main content area */
-.content-wrap {
-    flex: 1; /* This will take up the space between header and footer */
-    position: relative;
-    z-index: 2;
-}
-
-/* Footer styling */
-footer {
-    flex-shrink: 0; /* Prevent footer from shrinking */
-    color: black;
-}
 
 .container {
     display: flex;
@@ -79,8 +61,22 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.welcome,
-.business {
+.content-wrap {
+    flex: 1 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    flex-shrink: 0;
+    color: black;
+}
+
+.rights-index {
+    color: black;
+}
+
+.welcome, .business {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,17 +104,13 @@ p {
     color: white;
 }
 
-.blockquote-footer,
-blockquote {
+.blockquote-footer, blockquote {
     color: black;
     font-size: large;
-    background: none;
+    background: none; /* Remove the background */
 }
 
-.contact-details,
-.summary,
-.experience,
-.education {
+.contact-details, .summary, .experience, .education {
     margin-bottom: 10px;
 }
 
@@ -162,17 +154,23 @@ blockquote {
     padding-bottom: 20px;
 }
 
+/*.quote-section {*/
+/*    margin-top: 20px;*/
+/*    z-index: 2;*/
+/*    position: relative;*/
+/*    padding: 10px; !* Add padding for better readability *!*/
+/*}*/
+
 .quote-section .blockquote {
     color: #BC9785;
     font-size: 2em;
     font-weight: bold;
     text-shadow: 1px 1px #e0e0e0;
-    quotes: none;
+    quotes: none; /* Remove the dash before the quotes */
 }
 
-.quote-section .blockquote:before,
-.quote-section .blockquote:after {
-    quotes: none;
+.quote-section .blockquote:before, .quote-section .blockquote:after {
+    quotes: none; /* Remove blockquote default styling */
 }
 
 .quote-section .blockquote-footer {
@@ -180,13 +178,12 @@ blockquote {
     font-size: 1em;
 }
 
-.cv-section h1,
-.cv-section h2 {
-    margin-bottom: 20px;
+.cv-section h1, .cv-section h2 {
+    margin-bottom: 20px; /* Add margin at the bottom of these headings */
 }
 
 .cv-section h3 {
-    margin-top: 30px;
+    margin-top: 30px; /* Add margin at the top of these subheadings */
 }
 
 .education {
@@ -194,14 +191,13 @@ blockquote {
 }
 
 .heading-image img {
-    height: auto;
+    height: auto; /* Adjust this value to match the heading size */
     width: 100%;
-    margin-right: 10px;
+    margin-right: 10px; /* Adjust space between image and text */
 }
 
-.heading-image h2,
-.heading-image h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+.heading-image h2, .heading-image h3 {
+    margin-top: 20px; /* Add margin at the top of these headings */
+    margin-bottom: 20px; /* Add margin at the bottom of these headings */
+    text-align: center; /* Center the text */
 }
