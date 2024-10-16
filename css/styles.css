@@ -72,8 +72,8 @@ footer {
     color: black;
 }
 
-.rights-index {
-    color: black;
+.rights-index, .rights {
+    color: #0056b3 !important;
 }
 
 .welcome, .business {
@@ -201,3 +201,21 @@ p {
     margin-bottom: 20px; /* Add margin at the bottom of these headings */
     text-align: center; /* Center the text */
 }
+
+
+/* Set all heading tags to dark blue */
+h1, h2, h3, h4, h5, h6, strong {
+    color: #2079c7; /* Dark blue */
+}
+
+/* Set the navbar brand and links to the specified color */
+.navbar-brand, .nav-link {
+    color: #2079c7 !important; /* Ensure the color is applied */
+}
+
+/* Add hover effect for the links */
+.nav-link:hover, .select_menu {
+    color: #0056b3 !important; /* Slightly darker blue for hover state */
+}
+
+.select_menu {font-weight: bold; font-size: x-large}
