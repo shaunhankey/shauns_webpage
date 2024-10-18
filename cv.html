@@ -7,105 +7,114 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/cv-styles.css">
 </head>
-<body class="cvBody">
-    <div class="content-wrap">
-        <!-- Header and Navigation -->
-        <header class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-<!--                <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>-->
                 <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+            </ul>
+        </div>
+    </header>
+<body class="cvBody">
+
+    <div class="cv-container">
+        <!-- Left Sidebar for Contact Information -->
+        <aside class="left-sidebar">
+            <!-- Profile Picture -->
+            <div class="profile-picture">
+                <img src="media/profile_pic.jpeg" alt="Profile Picture">
             </div>
-        </header>
 
-        <!-- Main Content -->
-        <main class="container cv-section">
-            <h1>Shaun Hankey - Curriculum Vitae</h1>
-            <p></p>
 
-            <section class="experience">
-                <h2>Professional Experience</h2>
-                <h3>Zimmer Biomet Ltd / ZimVie</h3>
-                <p><strong>Senior Sales Representative – NW England</strong> <em>2016 – Present</em></p>
-                <ul>
-                    <li>Responsible for selling the company's full portfolio of spinal devices.</li>
-                    <li>Provide training in the use of those devices.</li>
-                    <li>Promote key products in line with management strategy.</li>
-                    <li>Provide on-site and remote technical advice on product usage.</li>
-                </ul>
-                <p><strong>Key Technical Contributions:</strong></p>
-                <ul>
-                    <li>Utilized Python and Pandas to analyze sales data, identify trends, and optimize sales strategies.</li>
-                    <li>Developed automated reporting tools to streamline sales tracking and performance metrics.</li>
-                    <li>Significantly increased Mobi-C userbase from 3 to 26 users</li>
-                    <li>Winner of Sales Person of the Year 2019</li>
-                </ul>
+            <!-- Summary -->
+            <div class="summary">
+                <h2>Summary</h2>
+                <p>Senior Sales Representative with 25+ years of experience in the medical device industry. Proven track record of significantly growing revenue, providing on-site technical support, and driving product adoption. Certified Data Scientist skilled in Python and data analysis to optimise sales strategies.</p>
+            </div>
 
-                <h3>Lindare Medical Ltd</h3>
-                <p><strong>Area Sales Manager – North of England</strong> <em>Sept 2013 – Aug 2016</em></p>
-                <ul>
-                    <li>Promoted Total Disc Replacement for both Lumbar & Cervical Spine, MAGEC Magnetic Growth Rods for Early Onset Scoliosis (EOS), PLIF/TLIF Cages, Interspinous Devices & Orthobiologics.</li>
-                    <li>Attended surgeries to promote best use of products & surgical techniques.</li>
-                    <li>Supported nursing staff and scrub team with product instrumentation.</li>
-                    <li>Negotiated pricing with Procurement and Management within NHS.</li>
-                </ul>
-                <p><strong>Key Successes:</strong></p>
-                <ul>
-                    <li>Sold 50 implants to a new user in the first quarter of employment.</li>
-                    <li>Trained 8 new surgeons in Germany for Endoscopic Spinal Surgery.</li>
-                    <li>Achieved significant sales growth on prior year.</li>
-                </ul>
-
-                <h3>Surgi-C Ltd</h3>
-                <p><strong>Territory Manager – North of England</strong> <em>Oct 2011 – Sept 2013</em></p>
-                <ul>
-                    <li>Responsible for TDR (both Lumbar & Cervical Spine), MAGEC Magnetic Growth Rods for EOS, PLIF/TLIF Cages, Interspinous Devices, Fusion Instrumentation & Orthobiologics.</li>
-                    <li>Attended surgeries to promote best use of products & surgical techniques.</li>
-                    <li>Supported nursing staff and scrub team with product instrumentation.</li>
-                    <li>Negotiated pricing with Procurement and Management within NHS.</li>
-                </ul>
-                <p><strong>Key Successes:</strong></p>
-                <ul>
-                    <li>Finished 2nd out of 8 Territory Managers in terms of performance.</li>
-                    <li>Won the 'Circle of Excellence Award'.</li>
-                    <li>Grew territory to achieve target of above £500,000.</li>
-                </ul>
-
-                <h3>Other Employment</h3>
-                <ul>
-                    <li>Smith & Nephew Orthopaedics Ltd (Aug 2005 - Sept 2007)</li>
-                    <li>Biomet Merck Ltd (Aug 2002 - Aug 2005)</li>
-                    <li>Smith & Nephew Orthopaedics (June 2001 - Aug 2002)</li>
-                    <li>Bausch & Lomb Surgical Ltd (Aug 1995 - June 2001)</li>
-                    <li>Keeler Ltd (July 1992 - Aug 1995)</li>
-                </ul>
-
+            <!-- Education -->
+            <div>
                 <h2>Education and Training</h2>
                 <ul>
-                    <li>Certified Data Scientist (DataCamp): <a href="https://www.linkedin.com/in/shaun-hankey-b9153352/">See LinkedIn profile for more details</a></li>
-                    <li>LSI / MIA National Credentialing Register – Tier 3 Approved</li>
-                    <li>Intellicentrics – Premium Member with no outstanding credentials</li>
                     <li>Manchester Metropolitan University - MSc Business Management</li>
                     <li>Wigan College of Technology - Chartered Management Institute – CMI Level 5 Executive Diploma in Management</li>
+                    <li>Certified Data Scientist (DataCamp): <a class="custom-link" href="https://www.linkedin.com/in/shaun-hankey-b9153352/" >See LinkedIn profile for more details</a></li>
+                    <li>LSI / MIA National Credentialing Register – Tier 3 Approved</li>
+                    <li>Intellicentrics – Premium Member with no outstanding credentials</li>
                 </ul>
-            </section>
+            </div>
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Email: shaunhankey@gmail.com</p>
+                <p>Phone: (44) 7918 691475</p>
+                <p>Location: Manchester, UK</p>
+            </div>
+        </aside>
 
-        </main>
+        <!-- Main Content for CV Details -->
+        <section class="main-content">
+            <h1>Shaun Hankey</h1>
+            <h2>Senior Sales Representative - Medical Devices</h2>
+            <p>Highly accomplished Sales Representative specializing in spinal implants and other medical devices. Adept at building relationships, leading product demonstrations, and achieving significant market share growth.</p>
+
+            <!-- Current Position -->
+            <h2>Professional Experience</h2>
+            <div class="experience">
+                <h3>Zimmer Biomet Ltd / ZimVie</h3>
+                <p><strong>Senior Sales Representative – NW England - </strong> <em>from 2016 to Present</em></p>
+                <ul>
+                    <li>Responsible for selling the company's full portfolio of spinal devices.</li>
+                    <li>Provide on-site and remote technical advice to surgeons and healthcare staff.</li>
+                    <li>Lead product demonstrations and training sessions for new customers.</li>
+                    <li>Collaborate with management to develop marketing strategies and product positioning.</li>
+                </ul>
+                <p><strong>Key Achievements:</strong></p>
+                <ul>
+                    <li>Increased Mobi-C userbase from 3 to 26 users, growing the product's adoption rate significantly.</li>
+                    <li>Developed automated sales reporting using Python and Pandas to optimize sales strategy.</li>
+                    <li>Recipient of Sales Person of the Year Award in 2019 for exceeding quarterly targets.</li>
+                </ul>
+
+                <!-- Simplified Previous Experience -->
+                <h3>Previous Experience</h3>
+                <ul class="older-experience">
+                    <li>
+                        <strong>Lindare Medical Ltd</strong> – Area Sales Manager (2013 – 2016)
+                    </li>
+                    <li>
+                        <strong>Surgi-C Ltd</strong> – Territory Manager (2011 – 2013)
+                    </li>
+                    <li>
+                        <strong>Smith & Nephew Orthopaedics Ltd</strong> – (2005 – 2007)
+                    </li>
+                    <li>
+                        <strong>Biomet Merck Ltd</strong> – Territory Manager  (2002 – 2005)
+                    </li>
+                    <li>
+                        <strong>Smith & Nephew Orthopaedics</strong> – Territory Manager  (2001 – 2002)
+                    </li>
+                    <li>
+                        <strong>Bausch & Lomb Surgical Ltd</strong> – Territory Manager  (1995 – 2001)
+                    </li>
+                    <li>
+                        <strong>Keeler Ltd</strong> – Area Manager <em>(1992 – 1995)</em>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->
-    <footer class="text-center py-4">
+    <footer class="text-center py-1">
         <p class="rights">&copy; 2024 Shaun Hankey - All rights reserved.</p>
     </footer>
 

@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main container */
+.cv-container {
+    display: flex;
+    height: 95vh; /* Make sure it takes full viewport height */
+}
+
+/* Sidebar Styling */
+.left-sidebar {
+    background-color: gainsboro;
+    color: black;
+    width: 25%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto; /* Allow scrolling when content exceeds the height */
+    height: 100%; /* Make sure sidebar takes up full height */
+
+}
+
+/* Profile Picture */
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+/* Reduce spacing between contact details */
+.contact-info p {
+    margin-bottom: 5px;
+    justify-content: space-around/* Reduce the margin between contact details */
+}
+
+/* Ensure consistent margins between sections */
+.contact-info, .summary, .education {
+    margin-top: 10px;
+    font-size: 8pt;
+    justify-content: flex-start;
+}
+
+/* Main Content Section */
+.main-content {
+    padding: 20px;
+    padding-left: 30px;
+    width: 80%;
+    background-color: lavender;
+    overflow-y: auto;
+    font-size: 11pt;
+}
+
+/* Footer */
+footer {
+
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Custom link color in sidebar */
+.left-sidebar a {
+    color: black;
+
+}
+
+.left-sidebar a:hover {
+    color: #2079c7; /* Optional: Hover effect for links */
+}
+
+/* Sidebar lists should keep bullet points */
+.left-sidebar ul {
+    list-style-type: disc; /* Add bullets */
+    padding-left: 20px;
+    font-size: 10pt/* Add some space for bullets to show properly */
+}
+
+.older-experience li {
+    /*margin-bottom: 5px;*/
+    font-size: 8px;
+}
+
+.older-experience li strong {
+    color: black;
+    font-size: small;
+}
+
+.older-experience li em {
+    color: #666;
+}
+
+.custom-link {
+    color: black !important; /* Force the color to be black */
+    font-weight: bold;
+}
+
+.custom-link:hover {
+    color: #2079c7; /* Optional: Change color on hover */
+}
+
+.summary {font-size: 10pt; font-style: italic}
+
+.rights {font-size: small}
+
+h2 {color: gray}
+
+@media (max-width: 768px) {
+    /* Stacking the sidebar and main content vertically */
+    .cv-container {
+        flex-direction: column;
+    }
+
+    /* Sidebar and main content take full width */
+    .left-sidebar {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px; /* Add space between sidebar and main content */
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Adjust navbar for mobile */
+    .navbar-nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Adjust font sizes for mobile readability */
+    body {
+        font-size: 0.9em;
+    }
+
+    /* Ensure images scale properly */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
