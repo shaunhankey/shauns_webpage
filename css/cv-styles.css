@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+p {font-size: 10pt; font-weight: bold}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
