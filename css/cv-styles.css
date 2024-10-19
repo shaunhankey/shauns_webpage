@@ -29,7 +29,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     overflow-y: auto; /* Allow scrolling when content exceeds the height */
-    height: 100%; /* Make sure sidebar takes up full height */
+    /*height: 100%; !* Make sure sidebar takes up full height *!*/
 
 }
 
@@ -59,9 +59,9 @@ body {
 .main-content {
     padding: 20px;
     padding-left: 30px;
-    width: 80%;
+    /*width: 80%;*/
     background-color: lavender;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     font-size: 11pt;
 }
 
@@ -137,7 +137,7 @@ h2 {color: gray}
 
     .main-content {
         width: 100%;
-        height: auto; /* Ensure main content grows with content */
+        /*height: auto; !* Ensure main content grows with content *!*/
         padding: 10px;
         overflow-y: visible; /* Ensure main content doesn’t scroll individually */
     }
