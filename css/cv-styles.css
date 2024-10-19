@@ -123,23 +123,23 @@ h2 {color: gray}
     /* Stacking the sidebar and main content vertically */
     .cv-container {
         flex-direction: column;
-        height: auto; /* Allow the container to grow */
+        height: auto; /* Allow the container to grow and shrink as needed */
     }
 
     /* Sidebar and main content take full width */
     .left-sidebar {
         width: 100%;
-        height: auto; /* Allow sidebar to adjust its height */
+        height: auto; /* Ensure the sidebar grows with content */
         padding: 10px;
-        margin-bottom: 20px; /* Add space between sidebar and main content */
-        overflow-y: visible; /* Remove individual scrolling */
+        margin-bottom: 20px; /* Space between sidebar and main content */
+        overflow-y: visible; /* Ensure sidebar doesn’t scroll individually */
     }
 
     .main-content {
         width: 100%;
-        height: auto; /* Allow main content to adjust its height */
+        height: auto; /* Ensure main content grows with content */
         padding: 10px;
-        overflow-y: visible; /* Remove individual scrolling */
+        overflow-y: visible; /* Ensure main content doesn’t scroll individually */
     }
 
     /* Adjust navbar for mobile */
