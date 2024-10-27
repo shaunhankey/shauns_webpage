@@ -72,8 +72,8 @@ footer {
     color: black;
 }
 
-.rights-index, .rights {
-    color: #0056b3 !important;
+.rights {
+    color: black !important;
 }
 
 .welcome, .business {
@@ -279,9 +279,11 @@ h1, h2, h3, h4, h5, h6, strong {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: portrait) {
   .index_img {
     max-height: 50vh;
     border: 20px;
   }
 }
+
+
