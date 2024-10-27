@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Existing head content -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Home</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="indexBody">
-    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<body class="body_index2">
+<header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Shaun Hankey</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
 <!--                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>-->
                 <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
@@ -27,23 +24,26 @@
             </ul>
         </div>
     </header>
-    <div class="content-wrap">
-        <div class="inner-content container text-center">
-            <main>
-                <div>
-<!--                    <div id="clock" class="clock"></div>-->
-                    <p class="select_menu">Please click a link from the menu above for more info...</p>
-                </div>
-            </main>
-        </div>
-    </div>
-    <footer class="text-center py-4 inner-content">
-        <p class="rights-index">&copy; 2024 Shaun Hankey - All rights reserved.</p>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./js/index.js"></script>
+<section>
+    <div class="flex-container_title">
+    <h2 class="h2_index2">Surgical Support</h2>
+    <h2 class="h2_index2">Drive Revenue</h2>
+    <h2 class="h2_index2">Data Analysis</h2>
+
+    </div>
+<div class="flex-container">
+    <a href="skills.html">
+        <img src="media/pexels-jonathanborba-surgery.jpg" class="index_img" alt="Surgical Technique" loading="lazy">
+    </a>
+    <a href="skills.html">
+        <img src="media/pexels-pixabay-sales.jpg" class="index_img" alt="Drive Revenue" loading="lazy">
+    </a>
+    <a href="skills.html">
+        <img src="media/pexels-neo-data.jpg" class="index_img" alt="Data Analysis" loading="lazy">
+    </a>
+</div>
+
+</section>
 </body>
 </html>

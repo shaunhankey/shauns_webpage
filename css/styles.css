@@ -220,3 +220,29 @@ h1, h2, h3, h4, h5, h6, strong {
 
 .select_menu {font-weight: bold; font-size: x-large}
 
+.index_img {
+  width: 400px;
+  height: 400px;
+}
+
+.flex-container {
+  margin: 75px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container_title {
+  margin: 75px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.body_index2 {
+    background-color: #007bff;
+}
+
+.h2_index2 {
+    color: #f8f9fa;
+    font-weight: bold;
+}
+
