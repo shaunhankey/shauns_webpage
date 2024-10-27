@@ -72,9 +72,7 @@ footer {
     color: black;
 }
 
-.rights {
-    color: black !important;
-}
+
 
 .welcome, .business {
     display: flex;
@@ -248,19 +246,37 @@ h1, h2, h3, h4, h5, h6, strong {
   text-align: center;
 }
 
+/* Consolidate .index_img for better mobile adaptability */
 .index_img {
+  width: 100%; /* Set width to 100% of container */
+  max-width: 400px; /* Maintain a max-width for larger screens */
+  height: auto; /* Ensure the image maintains its aspect ratio */
   border-radius: 25px;
-  max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
   margin: 10px auto;
+}
+
+/* Flex container layout adjustments */
+.flex-container {
+  margin: 20px auto; /* Reduce margin for better mobile view */
+  display: flex;
+  flex-wrap: wrap; /* Wrap items for smaller screens */
+  justify-content: center; /* Center images in mobile */
+}
+
+/* Flex container title adjustments */
+.flex-container_title {
+  margin: 20px auto; /* Adjust margin for smaller screens */
+  display: flex;
+  flex-direction: column; /* Stack titles vertically on mobile */
+  text-align: center;
 }
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
+  /* Stack images vertically on small screens */
   .flex-container {
-    display: flex;
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center images horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   .index_img {
@@ -268,22 +284,33 @@ h1, h2, h3, h4, h5, h6, strong {
     margin-bottom: 20px;
   }
 
-  .flex-container_title {
-    flex-direction: column; /* Stack titles vertically */
-    text-align: center;
-  }
-
   .h2_index2 {
     font-size: 1.5em; /* Reduce font size for mobile */
     margin-bottom: 10px;
+  }
+
+  /* Adjust .container for better spacing on mobile */
+  .container {
+    width: 90%; /* Use most of the screen width */
+    margin: 10px auto;
+    padding: 10px;
   }
 }
 
 @media (orientation: portrait) {
   .index_img {
-    max-height: 50vh;
-    border: 20px;
+    max-height: 50vh; /* Maintain reasonable height in portrait */
   }
 }
 
+/* Ensure footer displays well on small screens */
+footer {
+  font-size: 0.9em;
+  padding: 10px;
+  text-align: center;
+}
 
+/* Fix navbar spacing for mobile */
+.navbar {
+  padding: 0.5rem 1rem;
+}
