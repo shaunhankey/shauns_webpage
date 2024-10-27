@@ -235,24 +235,53 @@ h1, h2, h3, h4, h5, h6, strong {
   margin: 75px auto;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap; /* This will help with better spacing on smaller screens */
 }
 
 .body_index2 {
-    background-color: #007bff;
+  background-color: #007bff;
 }
 
 .h2_index2 {
-    color: #f8f9fa;
-    font-weight: bold;
+  color: #f8f9fa;
+  font-weight: bold;
+  text-align: center;
+}
+
+.index_img {
+  border-radius: 25px;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px auto;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+  }
+
+  .index_img {
+    max-width: 90%; /* Limit image width on mobile */
+    margin-bottom: 20px;
+  }
+
+  .flex-container_title {
+    flex-direction: column; /* Stack titles vertically */
+    text-align: center;
+  }
+
+  .h2_index2 {
+    font-size: 1.5em; /* Reduce font size for mobile */
+    margin-bottom: 10px;
+  }
 }
 
 @media (orientation: landscape) {
-    .index_img
-    {
-        max-height: 50vh;
-        margin: 10px auto;
-        border-radius: 25px;
-        border: 20px;
-    }
+  .index_img {
+    max-height: 50vh;
+    border: 20px;
+  }
 }
-
