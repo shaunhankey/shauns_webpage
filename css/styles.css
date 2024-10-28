@@ -1,316 +1,62 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
+/* Add top padding to body or main section to account for fixed navbar */
 body {
-    padding-top: 50px;
+    padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Or add to the section if you only want space below the navbar */
+section {
+    padding-top: 70px; /* Adjust based on navbar height */
+}
+
+
+/* Container styling */
+.flex-container {
     display: flex;
-    flex-direction: column;
-}
-
-.indexBody {
-    background-image: url('../media/new1.png');
-    background-size: contain; /* Ensure the image fits within the container */
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Add transparency */
-    margin: 20px 0;
-    z-index: 1;
-}
-
-.img-fixed {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.profile-image img,
-.contact-image img {
-    max-height: 40vh;
-    width: auto;
-    display: block;
+    justify-content: space-around;
+    flex-wrap: nowrap;
     margin: 20px auto;
+    max-width: 1200px; /* Optional: Limits overall container width for larger screens */
 }
 
-.container-contact {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section img {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.content-wrap {
-    flex: 1 0 auto;
-    position: relative;
-    z-index: 2;
-}
-
-footer {
-    flex-shrink: 0;
-    color: black;
-}
-
-
-
-.welcome, .business {
+/* Content item styling to align title and image */
+.content-item {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding-top: 10px;
-    color: #333;
-    text-shadow: 1px 1px #e0e0e0;
+    text-align: center;
+    margin: 15px;
+    flex-wrap: nowrap;
 }
 
-.welcome {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.business {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-.mb-0 {
-    font-size: xxx-large;
-    color: white;
-}
-
-.blockquote-footer, blockquote {
-    color: black;
-    font-size: large;
-    background: none; /* Remove the background */
-}
-
-.contact-details, .summary, .experience, .education {
-    margin-bottom: 10px;
-}
-
-.contact-details a {
-    color: #007bff;
-}
-
-.contact-details p {
-    margin-bottom: 10px;
-}
-
-.contact-details h2 {
-    margin-bottom: 20px;
-}
-
-@media (max-width: 844px) {
-    .profile-image img,
-    .contact-image img {
-        max-height: 80vh;
-        margin: 5px auto;
-    }
-}
-
-@media (orientation: landscape) {
-    .profile-photo img,
-    .contact-image img {
-        max-height: 50vh;
-        margin: 10px auto;
-        border-radius: 25px;
-        border: 20px;
-    }
-}
-
-.clock {
-    color: black;
-    font-size: inherit;
-    font-weight: bold;
-}
-
-#projects {
-    padding-bottom: 20px;
-}
-
-/*.quote-section {*/
-/*    margin-top: 20px;*/
-/*    z-index: 2;*/
-/*    position: relative;*/
-/*    padding: 10px; !* Add padding for better readability *!*/
-/*}*/
-
-.quote-section .blockquote {
-    color: #BC9785;
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 1px 1px #e0e0e0;
-    quotes: none; /* Remove the dash before the quotes */
-}
-
-.quote-section .blockquote:before, .quote-section .blockquote:after {
-    quotes: none; /* Remove blockquote default styling */
-}
-
-.quote-section .blockquote-footer {
-    color: black;
-    font-size: 1em;
-}
-
-.cv-section h1, .cv-section h2 {
-    margin-bottom: 20px; /* Add margin at the bottom of these headings */
-}
-
-.cv-section h3 {
-    margin-top: 30px; /* Add margin at the top of these subheadings */
-}
-
-.education {
-    margin-top: 30px;
-}
-
-.heading-image img {
-    height: auto; /* Adjust this value to match the heading size */
+/* Image styling */
+.index_img {
     width: 100%;
-    margin-right: 10px; /* Adjust space between image and text */
+    max-width: 300px; /* Constrains image size for larger screens */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Optional: Adds rounded corners */
 }
 
-.heading-image h2, .heading-image h3 {
-    margin-top: 20px; /* Add margin at the top of these headings */
-    margin-bottom: 20px; /* Add margin at the bottom of these headings */
-    text-align: center; /* Center the text */
-}
-
-
-/* Set all heading tags to dark blue */
-h1, h2, h3, h4, h5, h6, strong {
-    color: #2079c7; /* Dark blue */
-}
-
-/* Set the navbar brand and links to the specified color */
-.navbar-brand, .nav-link {
-    color: #2079c7 !important; /* Ensure the color is applied */
-}
-
-/* Add hover effect for the links */
-.nav-link:hover, .select_menu {
-    color: #0056b3 !important; /* Slightly darker blue for hover state */
-}
-
-.select_menu {font-weight: bold; font-size: x-large}
-
-.index_img {
-  width: 400px;
-  height: 400px;
-}
-
-.flex-container {
-  margin: 75px auto;
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-container_title {
-  margin: 75px auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* This will help with better spacing on smaller screens */
-}
-
-.body_index2 {
-  background-color: #007bff;
-}
-
+/* Title styling */
 .h2_index2 {
-  color: #f8f9fa;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* Consolidate .index_img for better mobile adaptability */
-.index_img {
-  width: 100%; /* Set width to 100% of container */
-  max-width: 400px; /* Maintain a max-width for larger screens */
-  height: auto; /* Ensure the image maintains its aspect ratio */
-  border-radius: 25px;
-  margin: 10px auto;
-}
-
-/* Flex container layout adjustments */
-.flex-container {
-  margin: 20px auto; /* Reduce margin for better mobile view */
-  display: flex;
-  flex-wrap: wrap; /* Wrap items for smaller screens */
-  justify-content: center; /* Center images in mobile */
-}
-
-/* Flex container title adjustments */
-.flex-container_title {
-  margin: 20px auto; /* Adjust margin for smaller screens */
-  display: flex;
-  flex-direction: column; /* Stack titles vertically on mobile */
-  text-align: center;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
-  /* Stack images vertically on small screens */
-  .flex-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .index_img {
-    max-width: 90%; /* Limit image width on mobile */
-    margin-bottom: 20px;
-  }
-
-  .h2_index2 {
-    font-size: 1.5em; /* Reduce font size for mobile */
-    margin-bottom: 10px;
-  }
-
-  /* Adjust .container for better spacing on mobile */
-  .container {
-    width: 90%; /* Use most of the screen width */
-    margin: 10px auto;
-    padding: 10px;
-  }
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .index_img {
+        max-width: 75%; /* Restricts image width further on mobile */
+    }
 }
 
-@media (orientation: portrait) {
-  .index_img {
-    max-height: 50vh; /* Maintain reasonable height in portrait */
-  }
-}
-
-/* Ensure footer displays well on small screens */
-footer {
-  font-size: 0.9em;
-  padding: 10px;
-  text-align: center;
-}
-
-/* Fix navbar spacing for mobile */
-.navbar {
-  padding: 0.5rem 1rem;
+a:hover {
+  background-color: lightgray;
+  font-weight: bolder;
+  text-decoration: none;
 }
