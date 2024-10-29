@@ -5,17 +5,17 @@ body {
 
 /* Or add to the section if you only want space below the navbar */
 section {
-    padding-top: 70px; /* Adjust based on navbar height */
+    padding-top: 5%; /* Adjust based on navbar height */
 }
 
 
 /* Container styling */
 .flex-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    margin: 20px auto;
-    max-width: 1200px; /* Optional: Limits overall container width for larger screens */
+    justify-content: stretch;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    max-width: 80%; /* Optional: Limits overall container width for larger screens */
 }
 
 /* Content item styling to align title and image */
@@ -24,14 +24,14 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 15px;
+    margin: 1rem;
     flex-wrap: nowrap;
 }
 
 /* Image styling */
 .index_img {
     width: 100%;
-    max-width: 300px; /* Constrains image size for larger screens */
+    max-width: 80%; /* Constrains image size for larger screens */
     height: auto;
     margin-bottom: 10px;
     border-radius: 8px; /* Optional: Adds rounded corners */
@@ -39,24 +39,39 @@ section {
 
 /* Title styling */
 .h2_index2 {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #333;
-    margin-bottom: 10px;
+    margin: 20px;
 }
 
 /* Mobile-specific adjustments */
-@media (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     .flex-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically on smaller screens */
         align-items: center;
     }
     .index_img {
         max-width: 75%; /* Restricts image width further on mobile */
     }
+
+    li a {
+        display: block;
+        font-size: medium;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
 }
+
 
 a:hover {
   background-color: lightgray;
   font-weight: bolder;
   text-decoration: none;
 }
+
+.navbar {min-height: 5rem; background-color: black; color: white}
+
+
