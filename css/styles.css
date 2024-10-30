@@ -1,21 +1,15 @@
-/* Add top padding to body or main section to account for fixed navbar */
+/* Add top padding to body to account for fixed navbar */
 body {
-    padding: 0.5rem; /* Adjust based on navbar height */
+    padding-top: 0.5rem; /* Adjust based on navbar height */
 }
-
-/* Or add to the section if you only want space below the navbar */
-section {
-     /* Adjust based on navbar height */
-}
-
 
 /* Container styling */
 .flex-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0.2rem auto;
-    max-width: 80%; /* Optional: Limits overall container width for larger screens */
+    max-width: 75%;
 }
 
 /* Content item styling to align title and image */
@@ -24,35 +18,36 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0.01rem;
-    flex-wrap: nowrap;
+    margin: 0.5rem;
 }
 
 /* Image styling */
-img .heading-image{
-    /*width: 100%;*/
-    max-width: 75%; /* Constrains image size for larger screens */
+img {
+    width: 75%;
+    max-width: 75%;
     height: auto;
-    margin: 1rem;
+    margin: 0.5rem;
     border-radius: 2rem;
-    }
+}
 
 /* Title styling */
 .h2_index2 {
     font-size: 2em;
     color: #333;
     margin: 20px;
+    justify-content: center;
 }
 
 /* Mobile-specific adjustments */
 @media only screen and (max-width: 480px) {
     .flex-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
         align-items: center;
     }
     img {
-        max-width: 75%;
-        border-radius: 1rem/* Restricts image width further on mobile */
+        width: 50%;
+        max-width: 50%;
+        border-radius: 0.75rem; /* Corrected semicolon */
     }
 
     li a {
@@ -60,19 +55,26 @@ img .heading-image{
         font-size: medium;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 0.5rem;
         text-decoration: none;
-
     }
 }
 
-
+/* Link hover effect */
 a:hover {
   background-color: lightgray;
   font-weight: bolder;
   text-decoration: none;
 }
 
-.navbar {min-height: 3rem; background-color: black; color: white}
+/* Navbar styling */
+.navbar {
+    min-height: 2rem;
+    background-color: gainsboro;
+    color: white;
+}
 
-
+.heading-image {width: 100%;
+                max-width: 75%;
+                justify-content: center;
+}
