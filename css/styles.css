@@ -1,20 +1,20 @@
 /* Add top padding to body or main section to account for fixed navbar */
 body {
-    padding-top: 70px; /* Adjust based on navbar height */
+    padding: 0.5rem; /* Adjust based on navbar height */
 }
 
 /* Or add to the section if you only want space below the navbar */
 section {
-    padding-top: 5%; /* Adjust based on navbar height */
+     /* Adjust based on navbar height */
 }
 
 
 /* Container styling */
 .flex-container {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 5% auto;
+    margin: 0.2rem auto;
     max-width: 80%; /* Optional: Limits overall container width for larger screens */
 }
 
@@ -24,18 +24,18 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 1rem;
+    margin: 0.01rem;
     flex-wrap: nowrap;
 }
 
 /* Image styling */
-.index_img {
-    width: 100%;
-    max-width: 80%; /* Constrains image size for larger screens */
+img .heading-image{
+    /*width: 100%;*/
+    max-width: 75%; /* Constrains image size for larger screens */
     height: auto;
-    margin-bottom: 10px;
-    border-radius: 8px; /* Optional: Adds rounded corners */
-}
+    margin: 1rem;
+    border-radius: 2rem;
+    }
 
 /* Title styling */
 .h2_index2 {
@@ -50,8 +50,9 @@ section {
         flex-direction: column; /* Stack items vertically on smaller screens */
         align-items: center;
     }
-    .index_img {
-        max-width: 75%; /* Restricts image width further on mobile */
+    img {
+        max-width: 75%;
+        border-radius: 1rem/* Restricts image width further on mobile */
     }
 
     li a {
@@ -72,6 +73,6 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar {min-height: 5rem; background-color: black; color: white}
+.navbar {min-height: 3rem; background-color: black; color: white}
 
 
