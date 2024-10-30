@@ -1,41 +1,49 @@
 /* Add top padding to body to account for fixed navbar */
 body {
-    padding-top: 0.5rem; /* Adjust based on navbar height */
+    padding-top: 2rem; /* Adjust this to the height of the fixed navbar */
 }
 
 /* Container styling */
 .flex-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0.2rem auto;
-    max-width: 75%;
+    max-width: 65%;
 }
 
 /* Content item styling to align title and image */
 .content-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    margin: 0.5rem;
+    margin: 0.2rem;
 }
 
-/* Image styling */
-img {
-    width: 75%;
-    max-width: 75%;
+/* Image styling for .img-fluid and standalone images */
+img, .img-fluid {
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem 0;
+}
+
+/* Specific styling for .heading-image container */
+.heading-image {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Title styling */
 .h2_index2 {
     font-size: 2em;
     color: #333;
-    margin: 20px;
-    justify-content: center;
+    margin: 1rem 0; /* Consistent margin above and below */
+    text-align: center;
 }
 
 /* Mobile-specific adjustments */
@@ -45,9 +53,9 @@ img {
         align-items: center;
     }
     img {
-        width: 50%;
-        max-width: 50%;
-        border-radius: 0.75rem; /* Corrected semicolon */
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0.5rem;
     }
 
     li a {
@@ -62,19 +70,14 @@ img {
 
 /* Link hover effect */
 a:hover {
-  background-color: lightgray;
-  font-weight: bolder;
-  text-decoration: none;
+    background-color: lightgray;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 /* Navbar styling */
 .navbar {
-    min-height: 2rem;
+    min-height: 3rem;
     background-color: gainsboro;
-    color: white;
-}
-
-.heading-image {width: 100%;
-                max-width: 75%;
-                justify-content: center;
+    color: black;
 }
