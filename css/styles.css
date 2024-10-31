@@ -1,6 +1,7 @@
 /* Add top padding to body to account for fixed navbar */
 body {
-    padding-top: 2rem; /* Adjust this to the height of the fixed navbar */
+    padding-top: 1rem;
+    /* Adjust this to the height of the fixed navbar */
 }
 
 /* Container styling */
@@ -42,8 +43,9 @@ img, .img-fluid {
 .h2_index2 {
     font-size: 2em;
     color: #333;
-    margin: 1rem 0; /* Consistent margin above and below */
+    margin: 0.1rem 0; /* Consistent margin above and below */
     text-align: center;
+    margin-bottom: 0.1rem;
 }
 
 /* Mobile-specific adjustments */
@@ -56,6 +58,8 @@ img, .img-fluid {
         width: 100%;
         max-width: 100%;
         border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+
     }
 
     li a {
@@ -80,4 +84,27 @@ a:hover {
     min-height: 3rem;
     background-color: gainsboro;
     color: black;
+    margin-bottom: 0.1rem;
+}
+
+
+/* Minimal margin below title */
+h2.text-center {
+    margin-bottom: 0.5rem; /* Reduces the space below the title */
+}
+
+/* Image styling for better spacing */
+img.img-fluid {
+    margin-bottom: 0.5rem; /* Control space below the image */
+}
+
+/* Paragraph styling for minimal spacing */
+.col-md-6 p {
+    margin-top: 0.5rem; /* Adds small spacing above the paragraph */
+}
+
+/* Footer spacing to keep it distinct */
+footer {
+    margin-top: 2rem;
+    padding: 0.5rem 0;
 }
