@@ -55,10 +55,10 @@ img, .img-fluid {
         align-items: center;
     }
     img {
-        width: 100%;
         max-width: 100%;
+        height: auto;
         border-radius: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
 
     }
 
@@ -74,10 +74,9 @@ img, .img-fluid {
 
 /* Link hover effect */
 a:hover {
-    background-color: lightgray;
     font-weight: bolder;
     text-decoration: none;
-}
+    }
 
 /* Navbar styling */
 .navbar {
@@ -100,7 +99,7 @@ img.img-fluid {
 
 /* Paragraph styling for minimal spacing */
 .col-md-6 p {
-    margin-top: 0.5rem; /* Adds small spacing above the paragraph */
+    margin-top: 1rem; /* Adds small spacing above the paragraph */
 }
 
 /* Footer spacing to keep it distinct */
@@ -108,3 +107,15 @@ footer {
     margin-top: 2rem;
     padding: 0.5rem 0;
 }
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+profile-picture {
+    width: 100%;
+    max-width: 75%;
+    height: auto;
+}
+
+p {font-size: medium}
