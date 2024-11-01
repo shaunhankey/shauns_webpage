@@ -29,7 +29,7 @@ img, .img-fluid {
     height: auto;
     border-radius: 2rem;
     margin: 1rem 0;
-}
+    }
 
 /* Specific styling for .heading-image container */
 .heading-image {
@@ -130,6 +130,15 @@ p {font-size: medium}
     width: 60%; /* Ensures it spans the full container width */
     margin: 0 auto; /* Centers the div within its parent container */
 }
+
+.col-md-6 img.img-fluid {
+    display: block; /* Ensures image behaves as a block element */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+}
+
+
+
 
 
 
