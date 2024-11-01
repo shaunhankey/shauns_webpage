@@ -24,7 +24,7 @@ body {
 
 /* Image styling for .img-fluid and standalone images */
 img, .img-fluid {
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     height: auto;
     border-radius: 2rem;
@@ -119,3 +119,10 @@ profile-picture {
 }
 
 p {font-size: medium}
+
+.contact-details  {text-align: center;
+    justify-content: center;
+}
+
+
+
