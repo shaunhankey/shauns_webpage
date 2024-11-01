@@ -112,9 +112,9 @@ footer {
   transform: scale(1.1);
 }
 
-profile-picture {
-    width: 100%;
-    max-width: 75%;
+.profile-picture {
+    width: 50%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -123,6 +123,14 @@ p {font-size: medium}
 .contact-details  {text-align: center;
     justify-content: center;
 }
+.contact-image_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; /* Ensures it spans the full container width */
+    margin: 0 auto; /* Centers the div within its parent container */
+}
+
 
 
 
