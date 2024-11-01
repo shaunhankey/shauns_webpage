@@ -138,8 +138,8 @@ p {font-size: medium}
 }
 
 .large-image {
-    width: 70%; /* Adjust to desired size */
-    max-width: 100%; /* Ensures responsiveness */
+    width: 50%; /* Adjust to desired size */
+    max-width: 20%; /* Ensures responsiveness */
     height: auto; /* Maintains aspect ratio */
 }
 
