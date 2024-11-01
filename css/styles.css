@@ -127,7 +127,7 @@ p {font-size: medium}
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%; /* Ensures it spans the full container width */
+    width: 30%; /* Ensures it spans the full container width */
     margin: 0 auto; /* Centers the div within its parent container */
 }
 
@@ -136,6 +136,13 @@ p {font-size: medium}
     margin-left: auto; /* Center the image horizontally */
     margin-right: auto; /* Center the image horizontally */
 }
+
+.large-image {
+    width: 70%; /* Adjust to desired size */
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+}
+
 
 
 
