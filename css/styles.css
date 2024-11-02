@@ -127,7 +127,8 @@ p {font-size: medium}
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%; /* Ensures it spans the full container width */
+    border-radius: 0;
+    width: 60%; /* Ensures it spans the full container width */
     margin: 0 auto; /* Centers the div within its parent container */
 }
 
@@ -138,10 +139,14 @@ p {font-size: medium}
 }
 
 .large-image {
-    width: 50%; /* Adjust to desired size */
-    max-width: 20%; /* Ensures responsiveness */
+    width: 80%; /* Adjust to desired size (matches others) */
+    max-width: 100%; /* Ensures responsiveness */
     height: auto; /* Maintains aspect ratio */
+    border-radius: 0.5rem; /* Reduces the border radius */
+    margin: 1rem auto; /* Centers the image and adds vertical spacing */
+    display: block; /* Ensures centering if needed */
 }
+
 
 
 
