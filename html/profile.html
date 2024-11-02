@@ -3,69 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <!-- Bootstrap CSS -->
+    <title>Projects</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="profileBody">
-<div class="content-wrap">
-    <!-- Header and Navigation -->
+<body>
 <header class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Shaun Hankey</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <span class="ml-1">Menu</span>
     </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <!--            <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>-->
-                <li class="nav-item"><a class="nav-link" href="surgical_support.html">Surgical Support</a></li>
-                <li class="nav-item"><a class="nav-link" href="drive_revenue.html">Drive Revenue</a></li>
-                <li class="nav-item"><a class="nav-link" href="data_analysis.html">Data Analysis</a></li>
-<!--                <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>-->
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="surgical_support.html">Surgical Support</a></li>
+            <li class="nav-item"><a class="nav-link" href="drive_revenue.html">Drive Revenue</a></li>
+            <li class="nav-item"><a class="nav-link" href="data_analysis.html">Data Analysis</a></li>
+            <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<main class="container mt-5">
+    <h2 class="text-center mb-5">Projects</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="media/projects.jpg" class="img-fluid" alt="Projects Overview" loading="lazy">
         </div>
-    </header>
-    <main class="container mt-4">
-
-        <div class="row mt-5">
-            <div class="col-md-6 heading-image">
-                <img src="../media/profile_pic_copy.jpeg" class="profile-picture" alt="Profile Pic"
-                     loading="lazy">
+        <div class="col-md-6">
+            <div class="project mb-4">
+                <h3>Football Prediction Project</h3>
+                <p>Built an EPL football match prediction model for the English Premier League. The model uses historical match data to predict outcomes of upcoming matches, helping fans and analysts make informed decisions.</p>
             </div>
-            <div class="col-md-6">
-                <h1 class="text-center">Profile Summary</h1>
-                <p>
-                    I am a seasoned medical device sales professional with a strong background in data science and
-                    machine learning, offering freelance services in both surgical support and data science projects.
-                    Proficient in Python, Pandas, Scikit-learn, and Statsmodels, I specialize in automating tasks,
-                    identifying trends, and driving business outcomes through data analysis. My unique blend of sales
-                    expertise and technical acumen ensures the delivery of exceptional results.
-                </p>
-                <p>
-                    With a proven track record of building strong relationships with colleagues and customers, I
-                    leverage data-driven insights to optimize sales strategies and enhance business processes. Whether
-                    you need surgical support or data science solutions, I bring a hands-on approach and dedication to
-                    every project.
+            <div class="project mb-4">
+                <h3>House Price Analysis</h3>
+                <p>Developed a comprehensive house price analysis tool that includes data on BOE Base Rates and Inflation. Scraped data from Rightmove for Newquay and Wigan and built numerous analytics to provide insights into housing trends. This analysis runs once per month to ensure up-to-date information.</p>
+            </div>
+            <div class="project mb-4">
+                <h3>Business Machine Learning Models</h3>
+                <p>Developed several machine learning models for business applications, including XGBoost, Kmeans clustering, linear regression, and logistical regression, to help businesses make data-driven decisions.</p>
+            </div>
+            <div class="project mb-4">
+                <h3>Django Projects</h3>
+                <p>Developed various web applications using Django:
+                    <strong>News App:</strong> A web application that lists highlights of news articles from various sources.
+                    <strong>Blog Post App:</strong> A simple blog platform where users can post articles, with features including user authentication, login, and registration.
+                    <strong>Bookstore:</strong> An online bookstore application that allows users to browse, search, and purchase books.
                 </p>
             </div>
         </div>
+    </div>
+</main>
 
-    </main>
-
-</div>
-
-<!-- Footer -->
 <footer class="text-center py-4">
-    <p class="rights">&copy; 2024 Shaun Hankey - All rights reserved.</p>
+    <p>&copy; 2024 Shaun Hankey - All rights reserved.</p>
 </footer>
 
-<!-- JavaScript at the end of the body for improved loading speed -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
