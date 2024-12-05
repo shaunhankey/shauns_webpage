@@ -1,7 +1,13 @@
 /* Add top padding to body to account for fixed navbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 body {
     padding-top: 1rem;
     /* Adjust this to the height of the fixed navbar */
+    background-color: black;
+    color: white;
+    font-family: poppin sans-serif;
 }
 
 /* Container styling */
@@ -9,8 +15,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: stretch; /* Add this to make all children of flex-container the same height */
-    margin: 0.2rem auto;
+    /*align-items: stretch; !* Add this to make all children of flex-container the same height *!*/
+    margin: 1rem auto;
     max-width: 80%;
 }
 
@@ -21,7 +27,7 @@ body {
     align-items: center;
     text-align: center;
     width: 25%;
-    margin: 0.5rem;
+    margin: 1rem;
     height: 250px; /* Fixed height; adjust as necessary to fit content */
 }
 
@@ -37,7 +43,7 @@ body {
 /* Title styling with fixed height */
 .h2_index2 {
     font-size: 2em;
-    color: #333;
+    color: white;
     height: 60px; /* Fixed height for all titles */
     overflow: hidden; /* Prevents text overflow */
     margin-bottom: 0.5rem; /* Adjust spacing below title */
@@ -61,6 +67,7 @@ body {
     }
     .h2_index2 {
         height: auto; /* Allow title height to adjust */
+        margin: 5px;
     }
 }
 
@@ -72,7 +79,7 @@ body {
         align-items: center;
     }
     img {
-        border-radius: 0.5rem;
+        border-radius: 5px;
         margin-bottom: 1rem;
     }
     li a {
@@ -86,7 +93,7 @@ body {
 
 /* Link hover effect */
 a:hover {
-    font-weight: bolder;
+    scale: 1.0;
     text-decoration: none;
 }
 
@@ -116,7 +123,7 @@ img.img-fluid {
 
 /* Footer spacing to keep it distinct */
 footer {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0.5rem 0;
 }
 
@@ -141,7 +148,7 @@ p {font-size: medium}
     justify-content: center;
     align-items: center;
     border-radius: 0;
-    width: 60%; /* Ensures it spans the full container width */
+    width: 70%; /* Ensures it spans the full container width */
     margin: 0 auto; /* Centers the div within its parent container */
 }
 
@@ -155,9 +162,17 @@ p {font-size: medium}
     width: 80%; /* Adjust to desired size (matches others) */
     max-width: 100%; /* Ensures responsiveness */
     height: auto; /* Maintains aspect ratio */
-    border-radius: 0.5rem; /* Reduces the border radius */
+    border-radius: 5px; /* Reduces the border radius */
     margin: 1rem auto; /* Centers the image and adds vertical spacing */
     display: block; /* Ensures centering if needed */
+}
+
+index_img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+
 }
 
 /*.img-projects {*/
@@ -168,3 +183,12 @@ p {font-size: medium}
 /*    margin: 1rem auto; !* Centers the image and adds vertical spacing *!*/
 /*    display: block; !* Centers within its container *!*/
 /*}*/
+
+
+h1{
+    padding: 15px;
+}
+
+img{
+    padding: 15px;
+}
